@@ -2,10 +2,10 @@ package main
 
 import "fmt"
 
-func twoSum(nums []int, target int) []int  {
+func twoSum(nums []int, target int) []int {
 	numMap := make(map[int]int, 0)
 	for index, num := range nums {
-		if i, ok := numMap[target - num]; ok {
+		if i, ok := numMap[target-num]; ok {
 			return []int{i, index}
 		}
 		numMap[num] = index
